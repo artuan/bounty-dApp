@@ -1,9 +1,7 @@
 # Bounty dApp
-> My final project for ConsenSys Academy’s 2018 Developer Program 
+My final project for ConsenSys Academy’s 2018 Developer Program 
 
-[![NPM Version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Downloads Stats][npm-downloads]][npm-url]
+
 
 One to two paragraph statement about your product and what it does.
 
