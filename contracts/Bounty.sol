@@ -129,7 +129,7 @@ contract Bounty is Ownable {
         return (count);
     }
 
-	/// @notice Function for rejecting a submission.
+    /// @notice Function for rejecting a submission.
     /// @param _bid Bounty id.
     /// @param _sid Submission id.
     function rejectSubmission(uint _bid, uint _sid)
