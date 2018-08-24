@@ -14,6 +14,7 @@ contract('Bounty', function(accounts) {
 	const dan   = accounts[5];
 	const erin  = accounts[6];
 
+	/// @notice Checks is bounty is correctly created and the amount ether on the contract is correct.
 	it("should create two bounties from second and third account", async () => {
 		const bounty = await Bounty.deployed();
 
@@ -31,7 +32,7 @@ contract('Bounty', function(accounts) {
 		assert.equal(await bounty.funds(), 15, "Amount of funds on contract is different than sum of send");
 	});
 
-	
+	/// @notice Checks is function for submission is working correclty.
 	it("should add three submissions to first and second bounty", async () => {
 		const bounty = await Bounty.deployed();
 		
@@ -46,6 +47,7 @@ contract('Bounty', function(accounts) {
 		assert.equal(await bounty.getSubmissionCount(0), 3, "Number of submission in bounty 1 does not match");
 	});
 
+	/// @notice Rejecting a submission sschould change the status to Rejected.
 	it("should reject first submission in first bounty", async () => {
 		const bounty = await Bounty.deployed();
 
@@ -53,6 +55,8 @@ contract('Bounty', function(accounts) {
 		assert.equal(await bounty.getSubmissionStatus(0,0), Rejected, "Status should be 1");
 	});
 
+		
+	/// @notice It is imporatant that accepting a submission rejects all other submissions inside bount.
 	it("should approve first submission in second bounty and reject other submissions", async () => {
 		const bounty = await Bounty.deployed();		
 
@@ -63,6 +67,7 @@ contract('Bounty', function(accounts) {
 		assert.equal(await bounty.getSubmissionStatus(1,2), Rejected, "Status should be 2");
 	});
 
+	/// @notice Tests check if the the contract is coreclty distributing the ethers.
 	it("should check if the amount of ether on the contract after approval os submission is 5", async () => {
 		const bounty = await Bounty.deployed();		
 		const funds = await bounty.funds();
