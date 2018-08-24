@@ -68,7 +68,7 @@ contract('Bounty', function(accounts) {
 	});
 
 	/// @notice Tests check if the the contract is coreclty distributing the ethers.
-	it("should check if the amount of ether on the contract after approval os submission is 5", async () => {
+	it("should check if the amount of ether on the contract after approval is submission is 5", async () => {
 		const bounty = await Bounty.deployed();		
 		const funds = await bounty.funds();
 		assert.equal(await bounty.funds(), 5, "Amount of funds on contract is wrong", funds);
