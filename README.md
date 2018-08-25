@@ -3,7 +3,7 @@
 Bounty dApp is an decentralized application that aims to solve the problem of trust in centralized bounties.
 Creating a bounty is simple user needs to set the name, description and amount of Ether that is prepared to pay for the successfuly completion of the given task. Ether is stored on the smart contract and cannot be withdrawn from it.
 Users can list the bounties and submit the solutions/service.
-Bounty issuer can reject and approve a submission. 
+Bounty issuer can reject or approve a submission. 
 
 Approving a submission pays the Ether, rejects all other submissions and closes the bounty.
 
@@ -16,7 +16,7 @@ For running this app localy you need to have installed Node, Truffle and Ganache
 
 ## Installation & Usage
 
-1. Clone the repo, move into the directory, install external contract node modules for frontend
+1. Clone the repo, move into the directory, install external contract node modules for frontend.
 
 	```sh
 	 git clone https://github.com/artuan/bounty-dApp
@@ -43,7 +43,7 @@ For running this app localy you need to have installed Node, Truffle and Ganache
 
 	```sh
 	truffle compile
-	truffle migrate
+	truffle migrate --reset
     ```
 
 6. Test the contract by running tests in truffle.
