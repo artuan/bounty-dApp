@@ -84,9 +84,6 @@ contract Bounty is Ownable {
         _;
     }
 
-    /// @notice Constructor.
-    constructor() public {}
-
     /// @notice Create a bounty.
     /// @dev The function is payable.
     /// @param _name Bounty Name.
@@ -152,8 +149,8 @@ contract Bounty is Ownable {
 		onlyBountyOwner(_bid)
         public 
     {
-        uint length = bounties[_bid].submissionCount;
         bounties[_bid].status = BountyStatus.Close;
+        uint length = bounties[_bid].submissionCount;
         for (uint i = 0; i < length; i++) {
             if(i == _sid) {
                 bounties[_bid].submissions[i].status = SubmissionStatus.Approved;
