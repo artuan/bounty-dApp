@@ -1,13 +1,14 @@
 # Bounty dApp
 
-Bounty dApp is an decentralized application that aims to solve the problem of trust in centralized bounties.
-Creating a bounty is simple user needs to set the name, description and amount of Ether that is prepared to pay for the successfuly completion of the given task. Ether is stored on the smart contract and cannot be withdrawn from it.
-Users can list the bounties and submit the solutions/service.
-Bounty issuer can reject or approve a submission. 
-
-Approving a submission pays the Ether, rejects all other submissions and closes the bounty.
-
 ![](header.png)
+
+Bounty dApp is an decentralized application that aims to solve the problem of trust in centralized bounties.
+Creating a bounty is simple, set the name, description and amount of Ether that is prepared to pay for the successfuly completion of the given task. 
+
+* Users can list the bounties and submit the solutions/service.
+* Bounty issuer can reject or approve a submission. 
+* Approving a submission pays the Ether, rejects all other submissions and closes the bounty.
+* Ether is stored on the smart contract and cannot be withdrawn from it.
 
 ## Running the dApp
 
