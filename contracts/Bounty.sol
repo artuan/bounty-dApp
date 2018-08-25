@@ -86,7 +86,7 @@ contract Bounty is Ownable {
 
     /// @notice Create a bounty.
     /// @dev The function is payable.
-    /// @param _name Bounty Name.
+    /// @param _name Bounty name.
     /// @param _description Bounty description.
     function createBounty(string _name, string _description)
         public 
