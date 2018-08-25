@@ -84,6 +84,12 @@ contract Bounty is Ownable {
         _;
     }
 
+    /// @notice Constructor.
+    constructor() public {
+        funds = 0;
+        bountiesCount = 0;
+    }
+
     /// @notice Create a bounty.
     /// @dev The function is payable.
     /// @param _name Bounty name.
