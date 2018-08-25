@@ -53,8 +53,3 @@ Example of use in rejectSubmission function:
         emit SubmissionRejected(_bid, _sid);
     }
 ```
-### Integer Arithmetic Overflow
-
-All integer variables are handled internally by contract logic and cannot be modified direclty by contract user.
-
-
