@@ -9,7 +9,6 @@ Approving a submission pays the Ether, rejects all other submissions and closes 
 
 ![](header.png)
 
-
 ## Running the dApp
 
 For running this app localy you need to have installed Node, Truffle and Ganache CLI.
@@ -20,7 +19,7 @@ For running this app localy you need to have installed Node, Truffle and Ganache
 1. Clone the repo, move into the directory, install external contract node modules for frontend
 
 	```sh
-	 git clone https://github.com/spdz/veloledger_truffle.git
+	 git clone https://github.com/artuan/bounty-dApp
 	 cd bounty-dApp
 	 npm install
     ```
