@@ -168,9 +168,8 @@ contract Bounty is Ownable {
         if(funds >= amount) {
             funds = funds - amount;
             receiver.transfer(amount);
+            emit MoneyTransfaredAfterApprovedBounty(_bid);
 		}
-		
-        emit MoneyTransfaredAfterApprovedBounty(_bid);
     }
 
     /// @notice Add a submission to bounty.
