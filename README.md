@@ -3,8 +3,8 @@
 ![](header.png)
 
 Bounty dApp is an decentralized application that aims to solve the problem of trust in centralized bounties.
-Creating a bounty is simple, set the name, description and amount of Ether that is prepared to pay for the successfuly completion of the given task. 
 
+* Creating a bounty is simple, user sets the name, description and amount of Ether that is prepared to pay for the successfuly completion of the given task. 
 * Users can list the bounties and submit the solutions/service.
 * Bounty issuer can reject or approve a submission. 
 * Approving a submission pays the Ether, rejects all other submissions and closes the bounty.
